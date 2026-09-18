@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PhishGuard | Awareness Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="nav container">
+      <div class="logo">Phish<span>Guard</span></div>
+      <div class="links">
+        <a href="#checker">URL Checker</a>
+        <a href="#awareness">Awareness</a>
+        <a href="#tips">Safety Tips</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-copy">
+        <p class="badge">AI-ASSISTED SECURITY AWARENESS</p>
+        <h1>Stay one step ahead of <span>phishing.</span></h1>
+        <p class="lead">Check a suspicious URL and learn the warning signs that help keep your accounts and personal information safe.</p>
+        <a class="btn" href="#checker">Check a URL →</a>
+      </div>
+      <div class="shield">
+        <div class="shield-icon">✓</div>
+        <p>SECURITY<br><strong>FIRST</strong></p>
+      </div>
+    </section>
+
+    <section id="checker" class="section container">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">URL ANALYZER</p>
+          <h2>Is this link safe?</h2>
+        </div>
+        <p>Demo frontend — connect this form to your ML API later.</p>
+      </div>
+      <div class="checker-card">
+        <label for="url">Enter a website URL</label>
+        <div class="input-row">
+          <input id="url" type="text" placeholder="https://example.com">
+          <button class="btn" onclick="checkUrl()">Analyze URL</button>
+        </div>
+        <div id="result" class="result hidden"></div>
+        <p class="note">Never enter passwords, OTPs, card details, or other sensitive information into this demo.</p>
+      </div>
+    </section>
+
+    <section id="awareness" class="section dark">
+      <div class="container">
+        <p class="eyebrow">KNOW THE THREAT</p>
+        <h2>What is phishing?</h2>
+        <p class="wide">Phishing is a social-engineering attack where criminals imitate trusted websites, messages, or services to trick people into revealing information or taking unsafe actions.</p>
+        <div class="cards">
+          <article><div class="num">01</div><h3>Look-alike domains</h3><p>Attackers may use misspellings, extra words, unusual subdomains, or misleading domain names.</p></article>
+          <article><div class="num">02</div><h3>Urgent messages</h3><p>Pressure such as “verify now” or “account suspended” is often used to rush a decision.</p></article>
+          <article><div class="num">03</div><h3>Fake login pages</h3><p>A convincing copy of a real service may be used to capture usernames and passwords.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="tips" class="section container">
+      <p class="eyebrow">STAY SAFE</p>
+      <h2>Quick safety checklist</h2>
+      <div class="tips">
+        <div>✓ Check the domain carefully before signing in.</div>
+        <div>✓ Avoid clicking unexpected links in messages.</div>
+        <div>✓ Use bookmarks for important services.</div>
+        <div>✓ Enable multi-factor authentication.</div>
+        <div>✓ Never share OTPs or passwords through links.</div>
+        <div>✓ When unsure, open the official website yourself.</div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer">
+      <strong>PhishGuard</strong>
+      <span>Phishing Awareness Portal • Academic Project</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
